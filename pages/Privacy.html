@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Privacy Policy</title>
+	<Style>
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+:root {
+  --bg-clr: rgb(227, 207, 152);
+  --white: #fff;
+  --primary-text-clr: #212121;
+  --secondary-text-clr: #8c8c8c;
+  --bg-hvr: #fadd7d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body{
+  background: var(--bg-clr);
+  font-size: 12px;
+}
+
+.flex_align_justify{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex_align{
+  display: flex;
+  align-items: center;
+}
+
+.wrapper{
+  min-height: 100vh;
+  padding: 0 20px;
+}
+
+.terms_service{
+  width: 500px;
+  max-width: 100%;
+  height: 450px;
+  background: var(--white);
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.15);
+}
+
+.terms_service .tc_item{
+  padding: 20px 40px;
+}
+
+.terms_service .tc_head{
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  height: 90px;
+}
+
+.terms_service .tc_head .icon{
+  width: 50px;
+  height: 50px;
+  background: var(--bg-clr);
+  margin-right: 20px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: var(--white);
+}
+
+.terms_service .tc_body{
+  height: calc(100% - 170px);
+  overflow: auto;
+  padding-right: 20px;
+}
+
+.terms_service .tc_body ol li{
+  margin-bottom: 15px;
+}
+
+.terms_service .tc_body ol li h3{
+  margin-bottom: 5px;
+}
+
+.terms_service .tc_foot{
+  box-shadow: 0 -1px 2px rgba(0,0,0,0.15);
+  justify-content: space-between;
+  height: 80px;
+}
+
+.terms_service .tc_foot button{
+  width: 100%;
+  border: 1px solid var(--bg-clr);
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.terms_service .tc_foot button.decline_btn{
+  margin-right: 20px;
+  background: var(--white);
+  color: var(--bg-clr);
+}
+
+.terms_service .tc_foot button.accept_btn{
+  background: var(--bg-clr);
+  color: var(--white);
+}
+
+.terms_service .tc_foot button.decline_btn:hover{
+  background: var(--bg-clr);
+  color: var(--white);
+}
+
+.terms_service .tc_foot button.accept_btn:hover{
+  background: var(--bg-hvr);
+  color: var(--white);
+}
+.button {
+    display: inline-block;
+    padding: 5px 5px;
+    background-color: auto;
+    color: auto;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+  </Style>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+
+<div class="wrapper flex_align_justify">
+  <div class="terms_service">
+      <div class="tc_item tc_head flex_align_justify">
+        <div class="icon flex_align_justify">
+          <ion-icon name="terminal-outline"></ion-icon>
+        </div>
+        <div class="text">
+          <h2>Privacy Policy</h2>
+        </div>
+      </div>
+      <div class="tc_item tc_body">
+
+          <ul>
+            <h3>Privacy Policy</h3>
+            <li><p>We respect the privacy of our customers and are committed to protecting their personal information.
+                When you place an order for milk tea, we collect basic information such as your name, contact details, and payment information.
+                This information is only used for the purpose of fulfilling your order and ensuring smooth delivery of your milk tea.
+                We do not share your personal information with any third-party companies or individuals unless required by law.
+                If you have any questions or concerns about how we handle your personal information, please don't hesitate to contact us.</p></li>
+              <br>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, et. Ratione minima consequuntur incidunt nam porro voluptate quae ullam commodi animi voluptatum fugiat laboriosam rem eius aliquam earum, soluta necessitatibus.</p>
+               <br>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, sunt aliquid doloremque necessitatibus provident harum commodi eius dignissimos sint fugit vel tempore assumenda maiores? Ipsam recusandae unde officiis harum deleniti.</p>
+              </ul>
+      </div>
+      <div class="tc_item tc_foot flex_align">
+          <button class="decline_btn">
+          <a href="../index.html" class="button" target="_self"><b>I Disagree</b></a>
+          </button>
+          <button class="accept_btn">
+            <a href="../index.html" class="button" target="_self">I Agree</a>
+          </button>
+      </div>
+  </div>
+</div>
+
+</body>
+</html>

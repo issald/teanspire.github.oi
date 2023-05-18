@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Terms of Service Section</title>
+  <style>
+	@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+:root {
+  --bg-clr: rgb(227, 207, 152);
+  --white: #fff;
+  --primary-text-clr: #212121;
+  --secondary-text-clr: #8c8c8c;
+  --bg-hvr: #fadd7d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body{
+  background: var(--bg-clr);
+  font-size: 12px;
+}
+.flex_align_justify{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex_align{
+  display: flex;
+  align-items: center;
+}
+.wrapper{
+  min-height: 100vh;
+  padding: 0 20px;
+}
+.terms_service{
+  width: 500px;
+  max-width: 100%;
+  height: 450px;
+  background: var(--white);
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.15);
+}
+.terms_service .tc_item{
+  padding: 20px 40px;
+}
+.terms_service .tc_head{
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  height: 90px;
+}
+.terms_service .tc_head .icon{
+  width: 50px;
+  height: 50px;
+  background: var(--bg-clr);
+  margin-right: 20px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: var(--white);
+}
+.terms_service .tc_body{
+  height: calc(100% - 170px);
+  overflow: auto;
+  padding-right: 20px;
+}
+.terms_service .tc_body ol li{
+  margin-bottom: 15px;
+}
+.terms_service .tc_body ol li h3{
+  margin-bottom: 5px;
+}
+.terms_service .tc_foot{
+  box-shadow: 0 -1px 2px rgba(0,0,0,0.15);
+  justify-content: space-between;
+  height: 80px;
+}
+.terms_service .tc_foot button{
+  width: 100%;
+  border: 1px solid var(--bg-clr);
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.terms_service .tc_foot button.decline_btn{
+  margin-right: 20px;
+  background: var(--white);
+  color: var(--bg-clr);
+}
+
+.terms_service .tc_foot button.accept_btn{
+  background: var(--bg-clr);
+  color: var(--white);
+}
+
+.terms_service .tc_foot button.decline_btn:hover{
+  background: var(--bg-clr);
+  color: var(--white);
+}
+
+.terms_service .tc_foot button.accept_btn:hover{
+  background: var(--bg-hvr);
+  color: var(--white);
+}
+.button {
+    display: inline-block;
+    padding: 5px 5px;
+    background-color: auto;
+    color: auto;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+</style>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+
+<div class="wrapper flex_align_justify">
+  <div class="terms_service">
+      <div class="tc_item tc_head flex_align_justify">
+        <div class="icon flex_align_justify">
+          <ion-icon name="terminal-outline"></ion-icon>
+        </div>
+        <div class="text">
+          <h2>TERMS OF SERVICE</h2>
+        </div>
+      </div>
+      <div class="tc_item tc_body">
+        <ol>
+          <li>
+            <h3>Terms of use</h3>
+            <p>A Terms of Use agreement is a legal document that outlines the rules and guidelines that visitors to your website must follow in order to use your services or products. This agreement sets out the terms and conditions that govern the use of your website, including any disclaimers, limitations of liability, and provisions for user-generated content.</p>
+          </li>
+          <li>
+            <h3>Intellectual property rights</h3>
+            <p>This section outlines the intellectual property rights of the website owner, including copyrights, trademarks, and other proprietary rights. It may include restrictions on the use of copyrighted or trademarked materials, such as text, images, graphics, logos, and software, without the owner's express permission. This section may also specify any limitations on the use of user-generated content, such as the right to remove content that infringes on the intellectual property rights of others.</p>
+          </li>
+          <li>
+            <h3>Prohibited activities</h3>
+            <p>This section outlines the activities that are prohibited on the website, including those that violate the law or the rights of others. Some examples of prohibited activities may include<br>
+              <br>
+              <ul>
+              <li>Posting or transmitting any content that is illegal, harmful, threatening, abusive, harassing, defamatory, vulgar, obscene, or otherwise objectionable.<br></li>
+              <li>Impersonating another person or entity, or falsely representing your affiliation with a person or entity.<br></li>
+              <li>Engaging in any activity that violates the intellectual property rights of others, including copyright, trademark, or patent infringement.<br></li>
+              <li>Using the website to conduct any commercial activity or promote any commercial product or service without the website owner's express permission.<br></li>
+              <li>Introducing any viruses, malware, or other harmful software or code into the website or its servers.<br></li>Introducing any viruses, malware, or other harmful software or code into the website or its servers.<br>
+              </ul>
+              
+            </p>
+          </li>
+          <li>
+            <h3>Termination clause</h3>
+            <p>This section outlines the circumstances under which the website owner may terminate a user's access to the website.
+              
+            </p>
+          </li>
+          <li>
+            <h3>Governing law</h3>
+            <p>This section specifies the jurisdiction and governing law that will be used to resolve any disputes that arise from the use of the website.</p>
+          </li>
+        </ol>
+      </div>
+      <div class="tc_item tc_foot flex_align">
+          <button class="decline_btn">
+          <a href="../index.html" class="button" target="_self"><b>Decline</b></a>
+          </button>
+          <button class="accept_btn">
+            <a href="../index.html" class="button" target="_self">Accept</a>
+          </button>
+      </div>
+  </div>
+</div>
+
+</body>
+</html>

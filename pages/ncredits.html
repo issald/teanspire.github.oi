@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credits</title>
+    <style>
+      
+        
+@import  url('https://fonts.googleapis=Poppins:wght@200;300;400;500;600;700;&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+
+}
+:root{
+    --main-color: #5d3f0d;
+    --second-color: #222120;
+
+}
+section{
+    padding:50px 10%;
+}
+*::selection{
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+img{
+    width: 100%;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#C07F00;
+    box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+    padding: 15px 10%;
+    transition: 0.2s;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 40px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 11px 20px;
+    color: var(--second-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.navbar a:hover{
+    color: white;
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, calc(100% / 4));
+  grid-gap: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 250px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  background: rgb(241, 227, 165);
+  margin-left: -30px;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  width: 160px;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+.card-image img {
+  width: 160px;
+  height: 150px;
+  display: block;
+  object-fit: cover;
+  margin-left: 15px;
+}
+
+.card-text {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-text h2 {
+  margin-bottom: 10px;
+}
+
+.card-text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, calc(100% / 4));
+    grid-gap: 20px;
+    max-width: 1200px;
+  }
+    </style>
+</head>
+<body>
+  <!---Header-->
+    <header>
+    <a href="#" class="logo"><img src="../images/logo.png"></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <ul class="navbar">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../index.html">Menu</a></li>
+      <li><a href="../index.html">Delivery</a></li>
+      <li><a href="./img.html">Gallery</a></li>
+      <li><a href="../index.html">About</a></li>
+      <li><a href="../index.html">Contact</a></li>
+    </ul>
+    </header>
+    <div class="card-grid">
+        <div class="card">
+          <div class="card-image">
+            <img src="../images/issa.jpg" alt="Image 1">
+          </div>
+          <div class="card-text">
+            <h2>Dimalanta, Issa L.</h2>
+            <p>Team Leader (Programmer/Coder)</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-image">
+            <img src="../images/riza.jpg" alt="Image 2">
+          </div>
+          <div class="card-text">
+            <h2>Mercado, Riza</h2>
+            <p>Grapics Designer </p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-image">
+            <img src="../images/aldrin.jpg" alt="Image 3">
+          </div>
+          <div class="card-text">
+            <h2>Sunga, Aldrin</h2>
+            <p>Content Editor/ Data Collection</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-image">
+            <img src="../images/tyron.jpg" alt="Image 4">
+          </div>
+          <div class="card-text">
+            <h2>Dimarucut, Tyron</h2>
+            <p>Tester/Documentation</p>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

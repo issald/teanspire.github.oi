@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMEPAGE</title>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Permanent+Marker&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+
+
+
+
+
+@import  url('https://fonts.googleapis=Poppins:wght@200;300;400;500;600;700;&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+
+}
+:root{
+    --main-color: #5d3f0d;
+    --second-color: #222120;
+
+}
+section{
+    padding:50px 10%;
+}
+*::selection{
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+img{
+    width: 100%;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#C07F00;
+    box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+    padding: 15px 10%;
+    transition: 0.2s;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 40px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 11px 20px;
+    color: var(--second-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #4C3D3D;
+}
+.navbar a:hover{
+    color: white;
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background: rgb(241, 227, 165);
+    gap: 1rem;
+}
+.home-text{
+    flex: 1 1 34rem;
+
+}
+.home-img{
+    flex: 1 1 24rem;
+}
+.home-img img{
+    animation: animate 3s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: translate(-11px, 0);
+    }
+    50%{
+        transform: translate(-0px, -11px);
+    }
+    100%{
+        transform: translate(-11px, 0);
+    }
+}
+.home-text span{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: 600
+     var(--second-color);
+     text-align: center;
+     font-family: 'Lora', serif;
+}
+.home-text h1{
+    font-size: 4rem;
+    color: var(--main-color);
+    font-weight: bolder;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+.home-text h3{
+    font-weight: 600;
+    color: black;
+    font-family: 'Share Tech Mono', monospace;
+    margin: 0.5rem o 1.4rem;
+    font-size: 2rem;
+}
+.btn{
+    padding: 7px 16px;
+    border: 2px solid var(--second-color);
+    border-radius: 40px;
+    color: var(--second-color);
+    font-weight: 500;
+}
+.btn:hover{
+    color: #fff;
+    background-color: var(--second-color);
+}
+.heading{
+    text-align: center;
+}
+.heading span{
+    font-size: 1rem;
+    color: var(--second-color);
+}
+.heading h1{
+    font-size: 2rem;
+    color: var(--main-color);
+}
+.shop-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 5rem;
+
+}
+.shop-container .box{
+    flex: 1 1 10rem;
+    background: rgb(241, 227, 165);
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+}
+.shop-container .box .box-img{
+    width: 150px;
+    height: 150px;
+    margin-top: -100px;
+}
+.shop-container .box .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.stars{
+    margin: 1rem 0 0.2rem;
+    background-color: yellow;
+
+}
+.shop-container .box.stars .h2{
+    color: #ebdbc8;
+    font-size: 1.2rem;
+}
+.shop-container .box.stars .h2{
+    color: hsl(33, 47, 85%);
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0.2rem 0 0.5rem;
+}
+.box .btn{
+    border: 2px solid #ebdbc8;
+    color: #ebdbc8;
+}
+.box .btn:hover{
+    background: #ebdbc8;
+    color: var(--second-color);
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.delivery-img{
+    flex: 1 1 8rem;
+
+}
+.delivery-text, .app-text{
+    flex: 1 1 12rem;
+    line-height: 30px;
+}
+.delivery-text h2{
+    font-size: 1.2rem;
+    color: var(--second-color);
+}
+.delivery-text p{
+    margin: 0.10rem 0 2rem;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    background:rgb(241, 227, 165);
+    gap: 1.5rem;
+
+}
+.about-img{
+    flex: 1 1 17rem;
+    margin-top: 17px;
+
+}
+.about-text{
+    flex: 1 1 17rem;
+    line-height: 30px;
+}
+.about-text h2{
+    font-size: 1.2rem;
+    color: var(--second-color);
+}
+.about-text p{
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social a{
+    font-size: 27px;
+    margin: 0.5rem;
+
+}
+.social a .bx{
+    padding: 5px;
+    color: #fff;
+    background-color: #000000;
+    border-radius: 50%;
+
+}
+.social a .bx:hover{
+    background: var(--main-color);
+}
+.links{
+    margin: 1rem o 1rem;
+
+}
+.links a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--second-color);
+    padding: 1rem;
+}
+.links a:hover{
+    color: var(--main-color);
+
+}
+.contact p{
+    text-align: center;
+}
+.heading2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading2 span{
+    order:1;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.heading2 h1{
+    order: 2;
+    color: var(--main-color);
+}
+.heading3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading3 span{
+    order:1;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.heading3 h1{
+    order: 2;
+    color: var(--main-color);
+    font-size: 3rem;
+}
+@media(max-width:1150px){
+    header{
+        padding: 18px 7%;
+    }
+    section{
+        padding: 50px 7%;
+
+    }
+    .home-text h1{
+        font-size: 3rem;
+    }
+    .home-text h2{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:991px){
+    header{
+        padding: 18px 4%;
+    }
+    section{
+        padding: 50px 4%;
+
+    }
+
+}
+@media(max-width:768px){
+    header{
+        padding: 11px 4%;
+    }
+    #menu-icon{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 4px 4px rgb(14 55 54/ 14%);
+        border-top: 2px solid var(--main-color);
+        transition: 0.2s;
+        text-align: left;
+
+    }
+    .navbar.active{
+        top: 100%;
+
+    }
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+        color: var(--second-color);
+    }
+    .home-text span{
+        font-size: 0.9rem;
+    }
+    .home-text h1{
+        font-size: 2.4rem;
+    }
+    .home-text h2{
+        font-size: 1.2rem;
+    }
+    .contact{
+        margin-left: 180px;
+      }
+
+}
+@media(max-width:768px){
+    .home-text{
+        padding-top: inherit;
+
+    }
+    .shop-container .box{
+        margin-top: 6rem;
+    }
+    .heading h1{
+        font-size: 3.5rem;
+    }
+    .heading span{
+        font-size: 1.3rem;
+    }
+    .about{
+        flex-direction: column-reverse;
+
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+    }
+    @media(max-width:364px){
+        .links{
+            display: flex;
+            flex-direction: column;
+        }
+      .contact{
+        margin-left: 10px;
+      }
+    }
+}
+</style>
+</head>
+<body>
+      <!---Popups-->
+     
+      <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+      <div class="elfsight-app-2ac1a0b7-3886-47f3-a55a-e03053f98343"></div>
+    <!---Header-->
+    <header>
+    <a href="#" class="logo"><img src="./images/logo.png"></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Menu</a></li>
+        <li><a href="#delivery">Delivery</a></li>
+        <li><a href="./pages/img.html">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </header>
+<!---Home-->
+<section  class="home" id="home">
+    <div class="home-text"><br><br>
+        <span>Welcome to,</span><br>
+        <h1>Teanspire Milktea</h1>
+        <h3>The Ultimate Thrist Quencher</h3>
+        <h3>Drink to Inspire</h3><br><br>
+    </div>
+    <div class="home-img">
+    <img src="./images/bgmt.png" alt=""></div>
+</section>
+       <section class="shop" id="shop">
+        <div class="heading3">
+            <span>Shop Now</span><br><br><br>
+            <h1>Premium Milktea</h1>
+        </div>
+        <!---mt1-->
+           <div class="shop-container">
+            <div class="box">
+            <div class="box-img">
+                <img src="./images/pm-redvelvet.png" alt="">
+            </div>
+            <div>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <h2>Choco RedVelvet</h2>
+            <span>22oz 49.00</span>
+            <span>1L 88.00</span>
+        </div>
+<!---mt2-->
+        <div class="box">
+            <div class="box-img">
+                <img src="./images/pm-doubledutch.png" alt="">
+            </div>
+            <div>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <h2>Double Dutch</h2>
+            <span>22oz 49.00</span>
+            <span>1L 88.00</span>
+        </div>
+<!---mt3-->
+        <div class="box">
+            <div class="box-img">
+                <img src="./images/pm-hazzlenut.png" alt="">
+            </div>
+            <div>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <h2>Hazelnut</h2>
+            <span>22oz 49.00</span>
+            <span>1L 88.00</span>
+        </div>
+           </div>
+        <!---mt4-->
+           <div class="shop-container">
+            <div class="box">
+            <div class="box-img">
+                <img src="./images/pm-javachips.png" alt="">
+            </div>
+            <div>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <h2>Java Chips</h2>
+            <span>22oz 49.00</span>
+            <span>1L 88.00</span>
+        </div>
+<!---mt5-->
+        <div class="box">
+            <div class="box-img">
+                <img src="./images/pm-matcha.png" alt="">
+            </div>
+            <div>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <h2>Matcha</h2>
+            <span>22oz 49.00</span>
+            <span>1L 88.00</span>
+        </div>
+<!---mt6-->
+        <div class="box">
+            <div class="box-img">
+                <img src="./images/pm-redvelvet.png" alt="">
+            </div>
+            <div>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <h2>RedVelvet</h2>
+            <span>22oz 49.00</span>
+            <span>1L 88.00</span>
+        </div>
+           </div>
+        <!---mt7-->
+           <div class="shop-container">
+            <div class="box">
+            <div class="box-img">
+                <img src="./images/pm-saltedcaramel.png" alt="">
+            </div>
+            <div>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <h2>Salted Caramel</h2>
+           <span>22oz 49.00</span>
+            <span>1L 88.00</span>
+        </div>
+<!---mt8-->
+        <div class="box">
+            <div class="box-img">
+                <img src="./images/pm-tigerbrown.png" alt="">
+            </div>
+            <div>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <h2>Tiger Brown Sugar</h2>
+            <span>22oz 49.00</span>
+            <span>1L 88.00</span>
+        </div>
+<!---mt9-->
+        <div class="box">
+            <div class="box-img">
+                <img src="./images/pm-triplechocolate.png" alt="">
+            </div>
+            <div>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <h2>Triple Chocolate</h2>
+          <span>22oz 49.00</span>
+            <span>1L 88.00</span>
+        </div>
+           </div>
+            <!---rm-mt1--> 
+        <div class="heading">
+            <br><br><br>
+            <h1>Regular Milktea</h1>
+       
+           <div class="shop-container">
+            <div class="box">
+            <div class="box-img">
+                <img src="./images/rm-blueberry.png" alt="">
+            </div>
+            <div>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <h2>Blueberry</h2>
+            <span>22oz 39.00</span>
+            <span>1L 78.00</span>
+        </div>
+<!---rm-mt2-->
+        <div class="box">
+            <div class="box-img">
+                <img src="./images/rm-chocolate.png" alt="">
+            </div>
+            <div>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <h2>Chocolate</h2>
+            <span>22oz 39.00</span>
+            <span>1L 78.00</span>
+        </div>
+<!---rm-mt3-->
+        <div class="box">
+            <div class="box-img">
+                <img src="./images/rm-darkchocolate.png" alt="">
+            </div>
+            <div>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <h2>Dark Chocolate</h2>
+             <span>22oz 39.00</span>
+            <span>1L 78.00</span>
+        </div>
+           </div>
+  <!---rm-mt4-->
+           <div class="shop-container">
+            <div class="box">
+            <div class="box-img">
+                <img src="./images/rm-mango.png" alt="">
+            </div>
+            <div>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <h2>Mango</h2>
+            <span>22oz 39.00</span>
+            <span>1L 78.00</span>
+        </div>
+<!---rm-mt5-->
+        <div class="box">
+            <div class="box-img">
+                <img src="./images/rm-melon.png" alt="">
+            </div>
+            <div>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <h2>Melon</h2>
+             <span>22oz 39.00</span>
+            <span>1L 78.00</span>
+        </div>
+<!---rm-mt6-->
+        <div class="box">
+            <div class="box-img">
+                <img src="./images/rm-taro.png" alt="">
+            </div>
+            <div>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <h2>Taro</h2>
+             <span>22oz 39.00</span>
+            <span>1L 78.00</span>
+        </div>
+           </div>
+  <!---rm-mt7-->
+           <div class="shop-container">
+            <div class="box">
+            <div class="box-img">
+                <img src="./images/rm-ube.png" alt="">
+            </div>
+            <div>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <h2>Ube</h2>
+            <span>22oz 39.00</span>
+            <span>1L 78.00</span>
+        </div>
+<!---rm-mt8-->
+        <div class="box">
+            <div class="box-img">
+                <img src="./images/pm-matcha.png" alt="">
+            </div>
+            <div>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <h2>Matcha</h2>
+             <span>22oz 39.00</span>
+            <span>1L 78.00</span>
+        </div>
+<!---rm-mt9-->
+        <div class="box">
+            <div class="box-img">
+                <img src="./images/pm-redvelvet.png" alt="">
+            </div>
+            <div>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <h2>RedVelvet</h2>
+             <span>22oz 39.00</span>
+            <span>1L 78.00</span>
+        </div>
+           </div>
+       </section>
+<!---Delivery-->
+<section class="delivery" id="delivery">
+    <div class="heading2">
+        <span>Get Now</span>
+        <h1>Order With Magalang Delivery</h1>
+    </div>
+    <div class="container">
+        <div class="delivery-img">
+            <img src="./images/delivery.jpg" alt="">
+        </div>
+        <div class="delivery-text">
+            <h2>Today deserve's delivery</h2>
+            <p>Enjoy the convenience of shopping from the comfort of your own home with our online delivery service.With our fast and reliable delivery service, you can expect your order to arrive at your doorstep in no time.
+               Our delivery service is available 24/7, making it easy for you to get what you need whenever you need it.
+               Experience hassle-free shopping and save time with our convenient online delivery service.<br>
+              <br> If you want a delivery service we have the ATAD PATROL SERVICES- MAGALANG. Kindly message them 
+               or visit their own page which is the ATAD PATROL SERVICES MAGALANG or call them in this number
+               0945 887 7543, they also have delivery fees and it depends on how far your place.</p>
+            <a href="https://web.facebook.com/profile.php?id=100085168989014&sk=about" class="btn">Order Now</a>
+
+        </div>
+    </div>
+</section>
+
+<!---App-->
+<section class="app" id="app">
+    <div class="heading">
+
+                <!---About-->
+<section class="about" id="about">
+        <div class="about-img">
+            <img src="./images/tp2.jpg" alt=""> </div>
+            <div class="about-text">
+                <h2>ABOUT</h2>
+                <p>
+                    TEANSPIRE MILKTEA is a food service company established in 2022, specializing in 
+                    healthy milk tea. Milk tea contains antioxidants, polyphenols, and other beneficial
+                     compounds that can improve heart health, boost the immune system, and provide other 
+                     health benefits. This shop is franchise and inspired many people here in
+                      Magalang Pampanga. It is an important part of a ceremony in entertaining customers,
+                       that reflects a sign of respect and value for the guests.
+                </p>
+                <h2>GOALS</h2>
+                   <p> Create a welcoming atmosphere: where our customers can relax and enjoy their drinks.
+                   Providing excellent customer service: Our Staffs is also a friendly, knowledgeable, 
+                   and efficient in fulfilling orders.To invest in a good quality equipment that will maintain the quality of the product.</p>
+             </div>
+   
+</section>
+<!---Contact-->
+<section class="contact" id="contact">
+<div class="social">
+    <a href="https://web.facebook.com/profile.php?id=100085168989014&sk=about"><i class='bx bxl-facebook'></i></a>
+    <a href="#"><i class='bx bxl-twitter'></i></a>
+    <a href="#"><i class='bx bxl-instagram'></i></a>
+    <a href="#"><i class='bx bxl-youtube'></i></a>
+</div>    <br>
+<div class="links">
+    <a href="./pages/Privacy.html">Privacy Policy</a>
+    <a href="./pages/Terms.html">Terms of Use</a>
+    <a href="./pages/ncredits.html">Our Company</a>
+</div><br>
+<p>&#169; TeanspireMilktea All Right Reserved.</p>
+</section>
+<!---Internal Javascript-->
+<script>
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('active')
+}
+window.onscroll = () => {
+    menu.classList.remove('bx-x');
+    navbar.classList.remove('active')
+}
+</script>
+</body>
+</html>
